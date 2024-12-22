@@ -1,0 +1,1072 @@
+<!--
+You can import CSS files with <link rel="stylesheet" href="css/file.css" />
+You can import JS files with <script src="js/file.js"><\/script>
+-->
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>IPSUM</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oxanium:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/output.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-top bg-black px-5 xl:px-10">
+        <div class="container">
+          <div class="flex items-center justify-between text-white py-4 xl:p-0">
+            <button
+              class="xl:hidden p-2 mobile-menu hover:bg-gray-800 rounded-full"
+              aria-label="Toggle mobile menu"
+            >
+              <i class="fa-solid fa-bars text-white"></i>
+            </button>
+            <div class="flex items-center xl:gap-6">
+              <a href="/" class="text-2xl font-bold">
+                <img
+                  src="/assets/logo.svg"
+                  class="max-w-[100px] w-full xl:max-w-full"
+                  alt="Logo"
+                  width="118"
+                  height="28"
+                />
+              </a>
+              <nav
+                class="fixed hidden xl:block main-menu xl:static bg-black w-full transition ease-in-out duration-300 z-50 top-16 left-0 overflow-y-auto h-screen xl:h-auto"
+              >
+                <ul class="xl:flex items-center">
+                  <li
+                    class="py-5 px-4 hover:bg-[#3E4545] block xl:flex items-center menu-item gap-1 cursor-pointer font-semibold text-sm border-r border-white/5"
+                    data-target="browse-submenu"
+                  >
+                    <span
+                      >Browse Categories
+                      <i class="fa-solid fa-angle-down ml-2"></i
+                    ></span>
+                    <div
+                      id="browse-submenu"
+                      class="sub-menu bg-[#3E4545] text-white text-sm xl:px-10 xl:fixed xl:top-[60px] left-0 z-30 w-full hidden"
+                    >
+                      <div class="container">
+                        <ul class="block xl:flex items-center gap-12">
+                          <li class="py-4">
+                            <a
+                              href="#"
+                              class="hover:text-gray-300"
+                              title="Lubricants"
+                            >
+                              Lubricants
+                            </a>
+                          </li>
+                          <li class="py-4">
+                            <a
+                              href="#"
+                              class="hover:text-gray-300"
+                              title="Chemicals"
+                            >
+                              Chemicals
+                            </a>
+                          </li>
+                          <li class="py-4">
+                            <a
+                              href="#"
+                              class="hover:text-gray-300"
+                              title="Supplies"
+                            >
+                              Supplies
+                            </a>
+                          </li>
+                          <li class="py-4">
+                            <a
+                              href="#"
+                              class="hover:text-gray-300"
+                              title="Equipment"
+                            >
+                              Equipment
+                            </a>
+                          </li>
+                          <li class="py-4">
+                            <a
+                              href="#"
+                              class="hover:text-gray-300"
+                              title="Auto Parts"
+                            >
+                              Auto Parts
+                            </a>
+                          </li>
+                          <li class="py-4">
+                            <a
+                              href="#"
+                              class="hover:text-gray-300"
+                              title="Purchased Products"
+                            >
+                              Purchased Products
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li
+                    class="py-5 px-4 hover:bg-[#3E4545] flex items-center gap-1 cursor-pointer font-semibold text-sm border-r border-white/5"
+                  >
+                    <span
+                      >Who We Serve <i class="fa-solid fa-angle-down ml-2"></i
+                    ></span>
+                  </li>
+                  <li
+                    class="py-5 px-4 hover:bg-[#3E4545] flex items-center gap-1 cursor-pointer font-semibold text-sm border-r border-white/5"
+                  >
+                    <span
+                      >What We Do <i class="fa-solid fa-angle-down ml-2"></i
+                    ></span>
+                  </li>
+                  <li
+                    class="py-5 px-4 hover:bg-[#3E4545] flex items-center gap-1 cursor-pointer font-semibold text-sm border-r border-white/5"
+                  >
+                    <span
+                      >Who We Are <i class="fa-solid fa-angle-down ml-2"></i
+                    ></span>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+            <div class="flex items-center flex-[1_0_auto] justify-end">
+              <div class="hidden md:block mr-5 max-w-[290px] w-full">
+                <div class="relative">
+                  <input
+                    type="search"
+                    placeholder="Search by keyword, brand or SKU..."
+                    class="w-full text-light-mid bg-[#F8F8F8] border py-2 px-3 pr-10 text-sm focus:outline-none rounded-sm"
+                  />
+                  <button
+                    class="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray"
+                    aria-label="Search"
+                  >
+                    <i class="fa-solid fa-magnifying-glass text-[#3E4545]"></i>
+                  </button>
+                </div>
+              </div>
+              <a
+                href="#"
+                class="w-[24px] xl:w-[28px] hover:bg-gray-800 rounded-full mr-6"
+                aria-label="User Profile"
+              >
+                <img src="/assets/user.svg" alt="User" width="28" height="28" />
+              </a>
+              <a
+                href="#"
+                class="w-[24px] xl:w-[28px] hover:bg-gray-800 rounded-full"
+                aria-label="Shopping Cart"
+              >
+                <img src="/assets/cart.svg" alt="Cart" width="28" height="28" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="md:hidden block py-2 px-5 bg-[#3E4545]">
+        <div class="">
+          <div class="relative">
+            <input
+              type="search"
+              placeholder="Search by keyword, brand or SKU..."
+              class="w-full text-[#707070] border-[#EAEAEA] border py-2 px-3 pr-10 text-sm focus:outline-none rounded-sm"
+            /><button
+              class="absolute w-11 h-full right-0 top-1/2 transform -translate-y-1/2 text-[#707070]"
+              aria-label="Search"
+            >
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div id="content">
+      <div
+        class="breadcrumbs xl:bg-[#EAEAEA] text-light-mid text-sm px-5 xl:px-10 xl:sticky top-0 xl:z-20"
+      >
+        <div class="container">
+          <div class="flex flex-wrap justify-between items-stretch">
+            <nav class="py-4">
+              <ol class="list-none p-0 flex flex-wrap gap-y-3">
+                <li class="flex items-center">
+                  <a class="underline text-[#707070] text-sm" href="#"
+                    >Shop Categories</a
+                  >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-chevron-right h-4 w-4 mx-2 text-[#707070]"
+                  >
+                    <path d="m9 18 6-6-6-6"></path>
+                  </svg>
+                </li>
+                <li class="flex items-center">
+                  <a class="underline text-[#707070] text-sm" href="#"
+                    >Lubricants</a
+                  >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-chevron-right h-4 w-4 mx-2 text-[#707070]"
+                  >
+                    <path d="m9 18 6-6-6-6"></path>
+                  </svg>
+                </li>
+                <li class="flex items-center">
+                  <a class="underline text-[#707070] text-sm" href="#"
+                    >Engine Oils</a
+                  >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-chevron-right h-4 w-4 mx-2 text-[#707070]"
+                  >
+                    <path d="m9 18 6-6-6-6"></path>
+                  </svg>
+                </li>
+                <li class="text-[#222222]">
+                  Shell Helix Ultra ECT C3 5W30 Pure Plus Fs
+                </li>
+              </ol>
+            </nav>
+            <div class="hidden xl:flex flex-wrap items-center">
+              <p class="mr-5 font-oxanium font-semibold">$368.07</p>
+              <a
+                href="#"
+                title="Add to cart"
+                class="primary-btn__hover p-4 text-sm inline-block bg-[#FFBA00] uppercase font-oxanium font-semibold"
+                ><span class="relative z-[1]">Add to cart</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="py-10 xl:pt-[50px] xl:pb-24">
+        <div class="container px-4">
+          <div class="flex flex-wrap -mx-4">
+            <div class="xl:w-4/6 w-full px-4">
+              <div class="flex flex-wrap -mx-4">
+                <div class="md:w-5/12 w-full px-4">
+                  <img
+                    src="/assets/product_image.jpg"
+                    alt="product_image"
+                    width="381"
+                    height="381"
+                  />
+                </div>
+                <div class="md:w-7/12 w-full px-4">
+                  <h1
+                    class="text-2xl mb-7 text-[#222222] font-oxanium font-medium"
+                  >
+                    Shell Helix Ultra ECT C3 5W30 Pure Plus Fs
+                  </h1>
+                  <div class="mb-7">
+                    <div class="flex flex-wrap -mx-1 gap-y-2">
+                      <div class="w-1/2 md:w-1/3 px-1">
+                        <div
+                          class="border border-[#E4E7EC] hover:bg-[#d8e0e9] p-3 text-center cursor-pointer text-sm"
+                        >
+                          <p class="text-[#344054]">Bulk Gallons</p>
+                          <p class="text-[#667085]">$19.93</p>
+                        </div>
+                      </div>
+                      <div class="w-1/2 md:w-1/3 px-1">
+                        <div
+                          class="border border-[#E4E7EC] hover:bg-[#d8e0e9] p-3 text-center cursor-pointer text-sm"
+                        >
+                          <p class="text-[#344054]">6/1 Qt. Case</p>
+                          <p class="text-[#667085]">$43.39</p>
+                        </div>
+                      </div>
+                      <div class="w-1/2 md:w-1/3 px-1">
+                        <div
+                          class="border border-[#51F7CE] p-3 text-center cursor-pointer text-sm bg-[#EFFEFA]"
+                        >
+                          <p class="text-[#0A6557]">16 Gal. Keg</p>
+                          <p class="text-[#00AD8E]">$368.07</p>
+                        </div>
+                      </div>
+                      <div class="w-1/2 md:w-1/3 px-1">
+                        <div
+                          class="border border-[#E4E7EC] hover:bg-[#d8e0e9] p-3 text-center cursor-pointer text-sm"
+                        >
+                          <p class="text-[#344054]">5 Gal. Pail</p>
+                          <p class="text-[#667085]">$123.10</p>
+                        </div>
+                      </div>
+                      <div class="w-1/2 md:w-1/3 px-1">
+                        <div
+                          class="border border-[#E4E7EC] bg-[#F9FAFB] cursor-not-allowed p-3 text-center text-sm"
+                        >
+                          <p class="text-[#667085]">55 Gal. Drum</p>
+                          <p class="text-[#667085]">$1,199,14</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="border-[#EAEAEA] p-4 xl:p-8 border block xl:hidden mb-5"
+                  >
+                    <div class="pb-6 border-[#EAEAEA] border-b">
+                      <div class="flex justify-between items-center">
+                        <p
+                          class="text-[#006747] text-2xl xl:text-3xl font-oxanium font-semibold"
+                        >
+                          $368.07
+                        </p>
+                        <span
+                          class="text-[#3F3F50] bg-[#F7F7F8] text-xs py-1 px-2 rounded-md inline-block"
+                          >SKU 219875</span
+                        >
+                      </div>
+                      <p class="text-[#006747] text-base xl:text-lg">
+                        In Stock
+                      </p>
+                    </div>
+                    <div class="flex flex-wrap -mx-1 items-center py-6 w-full">
+                      <div class="px-1 w-2/5">
+                        <div
+                          class="border border-[#EAEAEA] bg-[#F8F8F8] p-[11px] xl:p-[14px] text-sm text-center"
+                        >
+                          <span><i class="fa-solid fa-minus"></i></span>
+                          <span class="mx-4 inline-block">1</span>
+                          <span><i class="fa-solid fa-plus"></i> </span>
+                        </div>
+                      </div>
+                      <div class="px-1 w-3/5">
+                        <a
+                          href="#"
+                          class="primary-btn__hover bg-[#FFBA00] text-sm text-[#222222] uppercase text-center p-3 xl:p-4 block font-oxanium font-semibold"
+                        >
+                          <span class="relative z-[1]">Add to cart</span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="border-[#EAEAEA] border-t pt-6 text-center">
+                      <a
+                        href="#"
+                        title="Add to list"
+                        class="inline-block bg-[#13997C] text-white uppercase py-2 px-5 xl:px-10 text-xs font-oxanium font-semibold"
+                        ><i
+                          class="fa-regular fa-circle-xmark mr-4 rotate-45"
+                        ></i
+                        >Add to list</a
+                      >
+                      <a
+                        href="#"
+                        class="underline text-[#575757] block mt-2 text-xs"
+                        title="Show my favourites"
+                        >Show my favourites</a
+                      >
+                    </div>
+                  </div>
+                  <p class="text-[#3E4545] text-base">
+                    Shell Helix Ultra ECT C3 features its most advanced
+                    emissions-compatible technology that helps to keep diesel
+                    particulate filters clean to help maintain engine
+                    performance. It helps to reduce engine friction to provide
+                    enhanced fuel economy.
+                  </p>
+                </div>
+              </div>
+              <div class="mt-10 xl:mt-32">
+                <h2
+                  class="text-[#0F172A] text-xl xl:text-2xl font-semibold accordion-header flex justify-between items-center"
+                >
+                  Product Description
+                  <span>
+                    <i
+                      class="fa-solid fa-plus icon transition-transform duration-300 !hidden"
+                    ></i>
+                    <i
+                      class="fa-solid fa-minus icon transition-transform duration-300"
+                    ></i>
+                  </span>
+                </h2>
+                <div id="description" class="mt-6 xl:mt-8 accordion-content">
+                  <h5
+                    class="text-lg xl:text-xl text-[#0F172A] font-semibold mb-4"
+                  >
+                    Shell Helix Ultra ECT C3 5W-30 Engine Oil <br />
+                    Fully synthetic motor oil - Shell's ultimate protection for
+                    vehicle emission systems
+                  </h5>
+                  <p class="text-[#3E4545]">
+                    Shell Helix Ultra ECT C3 features its most advanced
+                    emissions-compatible technology that helps to keep diesel
+                    particulate filters clean to help maintain engine
+                    performance. It helps to reduce engine friction to provide
+                    enhanced fuel economy.
+                  </p>
+                  <h5
+                    class="text-lg xl:text-xl text-[#0F172A] font-semibold mb-4"
+                  >
+                    Main Applications
+                  </h5>
+                  <ul class="list-disc text-[#3E4545] ml-8">
+                    <li
+                      class="marker:text-[#8A8AA3] marker:text-2xl text-base marker:leading-6 leading-6"
+                    >
+                      Shell Helix Ultra ECT C3’s fully synthetic formulation
+                      uses Shell’s most advanced emissions-compatible technology
+                      to help gasoline engine exhaust catalysts and keep diesel
+                      particulate filters clean and protects it from ash
+                      build-up that can block the exhaust system and lead to
+                      reduced engine performance.
+                    </li>
+                    <li
+                      class="marker:text-[#8A8AA3] marker:text-2xl text-base marker:leading-6 leading-6"
+                    >
+                      Shell Helix Ultra ECT can be used for modern gasoline
+                      engines, diesel engines with particulate filters and gas
+                      engines.
+                    </li>
+                  </ul>
+                  <h5
+                    class="text-lg xl:text-xl text-[#0F172A] font-semibold mb-4"
+                  >
+                    Main Applications
+                  </h5>
+                  <ul class="list-disc text-[#3E4545] ml-8">
+                    <li
+                      class="marker:text-[#8A8AA3] marker:text-2xl text-base marker:leading-6 leading-6"
+                    >
+                      Shell Helix Ultra ECT C3’s fully synthetic formulation
+                      uses Shell’s most advanced emissions-compatible technology
+                      to help gasoline engine exhaust catalysts and keep diesel
+                      particulate filters clean and protects it from ash
+                      build-up that can block the exhaust system and lead to
+                      reduced engine performance.
+                    </li>
+                    <li
+                      class="marker:text-[#8A8AA3] marker:text-2xl text-base marker:leading-6 leading-6"
+                    >
+                      Shell Helix Ultra ECT can be used for modern gasoline
+                      engines, diesel engines with particulate filters and gas
+                      engines.
+                    </li>
+                  </ul>
+                  <h5
+                    class="text-lg xl:text-xl text-[#0F172A] font-semibold mb-4"
+                  >
+                    Specifications, Approvals & Recommendations
+                  </h5>
+                  <ul class="list-disc text-[#3E4545] ml-8">
+                    <li
+                      class="marker:text-[#8A8AA3] marker:text-2xl text-base marker:leading-6 leading-6"
+                    >
+                      ACEA C3
+                    </li>
+                    <li
+                      class="marker:text-[#8A8AA3] marker:text-2xl text-base marker:leading-6 leading-6"
+                    >
+                      BMW LL-04
+                    </li>
+                    <li
+                      class="marker:text-[#8A8AA3] marker:text-2xl text-base marker:leading-6 leading-6"
+                    >
+                      MB-Approval 229.51/229.31
+                    </li>
+                    <li
+                      class="marker:text-[#8A8AA3] marker:text-2xl text-base marker:leading-6 leading-6"
+                    >
+                      Meets requirements GM dexos2™
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="mt-10 pt-10 border-t border-[#E2E8F0]">
+                <h2
+                  class="text-[#0F172A] text-xl xl:text-2xl font-semibold accordion-header flex justify-between items-center"
+                >
+                  Specification
+                  <span>
+                    <i
+                      class="fa-solid fa-plus icon transition-transform duration-300 !hidden"
+                    ></i>
+                    <i
+                      class="fa-solid fa-minus icon transition-transform duration-300"
+                    ></i>
+                  </span>
+                </h2>
+                <div id="description" class="mt-6 xl:mt-8 accordion-content">
+                  <div class="overflow-x-auto custom-scrollbar">
+                    <table class="table-auto border-[#C5C5C5] border w-full">
+                      <tbody
+                        class="[&>tr:nth-child(odd)]:bg-[#F8F8F8] [&>tr:nth-child(even)]:bg-[#EBEBEB]"
+                      >
+                        <tr class="">
+                          <td
+                            class="text-base whitespace-nowrap font-semibold text-black px-6 py-2 w-1/5 first:border-r first:border-[#C5C5C5]"
+                          >
+                            ACEA specification
+                          </td>
+                          <td class="text-base text-black px-6 py-2 w-4/5">
+                            A5/B5
+                          </td>
+                        </tr>
+                        <tr class="">
+                          <td
+                            class="text-base whitespace-nowrap font-semibold text-black px-6 py-2 w-1/5 first:border-r first:border-[#C5C5C5]"
+                          >
+                            API specification
+                          </td>
+                          <td class="text-base text-black px-6 py-2 w-4/5">
+                            SL
+                          </td>
+                        </tr>
+                        <tr class="">
+                          <td
+                            class="text-base whitespace-nowrap font-semibold text-black px-6 py-2 w-1/5 first:border-r first:border-[#C5C5C5]"
+                          >
+                            Manufacturer Approval
+                          </td>
+                          <td class="text-base text-black px-6 py-2 w-4/5">
+                            ACEA C3
+                          </td>
+                        </tr>
+                        <tr class="">
+                          <td
+                            class="text-base whitespace-nowrap font-semibold text-black px-6 py-2 w-1/5 first:border-r first:border-[#C5C5C5]"
+                          >
+                            Manufacturer Approval
+                          </td>
+                          <td class="text-base text-black px-6 py-2 w-4/5">
+                            BMW LL-04
+                          </td>
+                        </tr>
+                        <tr class="">
+                          <td
+                            class="text-base whitespace-nowrap font-semibold text-black px-6 py-2 w-1/5 first:border-r first:border-[#C5C5C5]"
+                          >
+                            Manufacturer Approval
+                          </td>
+                          <td class="text-base text-black px-6 py-2 w-4/5">
+                            MB-Approval 229.51/229.31
+                          </td>
+                        </tr>
+                        <tr class="">
+                          <td
+                            class="text-base whitespace-nowrap font-semibold text-black px-6 py-2 w-1/5 first:border-r first:border-[#C5C5C5]"
+                          >
+                            Manufacturer Approval
+                          </td>
+                          <td class="text-base text-black px-6 py-2 w-4/5">
+                            Meets requirements GM dexos2™
+                          </td>
+                        </tr>
+                        <tr class="">
+                          <td
+                            class="text-base whitespace-nowrap font-semibold text-black px-6 py-2 w-1/5 first:border-r first:border-[#C5C5C5]"
+                          >
+                            SAE viscosity class
+                          </td>
+                          <td class="text-base text-black px-6 py-2 w-4/5">
+                            MB-Approval 229.51/229.31
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="mt-10 pt-10 border-t border-[#E2E8F0] border-b pb-5 mb-5 pdc-top"
+              >
+                <h2
+                  class="text-[#0F172A] text-xl xl:text-2xl font-semibold accordion-header flex justify-between items-center"
+                >
+                  Product Data Sheets
+                  <span>
+                    <i
+                      class="fa-solid fa-plus icon transition-transform duration-300 !hidden"
+                    ></i>
+                    <i
+                      class="fa-solid fa-minus icon transition-transform duration-300"
+                    ></i>
+                  </span>
+                </h2>
+                <div id="description" class="mt-6 xl:mt-8 accordion-content">
+                  <div class="mb-[18px]">
+                    <i class="fa-regular fa-file-pdf text-2xl mr-4"></i
+                    ><a
+                      class="text-[#575757] underline"
+                      href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title="Data Sheet Lorem Ipsum"
+                      >Data Sheet Lorem Ipsum</a
+                    >
+                  </div>
+                  <div class="mb-[18px]">
+                    <i class="fa-regular fa-file-pdf text-2xl mr-4"></i
+                    ><a
+                      class="text-[#575757] underline"
+                      href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title="Data Sheet Lorem Ipsum Dolor"
+                      >Data Sheet Lorem Ipsum Dolor</a
+                    >
+                  </div>
+                  <div class="mb-[18px]">
+                    <i class="fa-regular fa-file-pdf text-2xl mr-4"></i
+                    ><a
+                      class="text-[#575757] underline"
+                      href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title="Data Sheet Lorem Ipsum Dolor Sit Amet"
+                      >Data Sheet Lorem Ipsum Dolor Sit Amet</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="xl:w-2/6 w-full px-4 hidden xl:block">
+              <div class="border-[#EAEAEA] p-8 border sticky top-16 z-10">
+                <div class="pb-6 border-[#EAEAEA] border-b">
+                  <div class="flex justify-between items-center">
+                    <p
+                      class="text-[#006747] text-3xl font-oxanium font-semibold"
+                    >
+                      $368.07
+                    </p>
+                    <span
+                      class="text-[#3F3F50] bg-[#F7F7F8] text-xs py-1 px-2 rounded-md inline-block"
+                      >SKU 219875</span
+                    >
+                  </div>
+                  <p class="text-[#006747] text-lg">In Stock</p>
+                </div>
+                <div class="flex flex-wrap -mx-1 items-center py-6 w-full">
+                  <div class="px-1 w-2/5 shrink-0">
+                    <div
+                      class="border border-[#EAEAEA] bg-[#F8F8F8] p-[14px] text-sm text-center"
+                    >
+                      <span><i class="fa-solid fa-minus opacity-20"></i></span>
+                      <span class="mx-4 inline-block">1</span>
+                      <span><i class="fa-solid fa-plus"></i> </span>
+                    </div>
+                  </div>
+                  <div class="px-1 w-3/5">
+                    <a
+                      href="#"
+                      class="primary-btn__hover bg-[#FFBA00] text-sm text-[#222222] uppercase text-center p-4 block font-oxanium font-semibold"
+                    >
+                      <span class="relative z-[1]">Add to cart</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="border-[#EAEAEA] border-t pt-6 text-center">
+                  <a
+                    href="#"
+                    title="Add to list"
+                    class="inline-block bg-[#13997C] text-white uppercase py-2 px-5 xl:px-10 text-xs font-oxanium font-semibold"
+                    ><i class="fa-regular fa-circle-xmark mr-4 rotate-45"></i
+                    >Add to list</a
+                  >
+                  <a
+                    href="#"
+                    class="underline text-[#575757] block mt-2 text-xs"
+                    title="Show my favourites"
+                    >Show my favourites</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="sticky-atc sm:hidden flex flex-wrap items-center w-full justify-between bg-[#EAEAEA] sticky bottom-0 z-10"
+      >
+        <p class="mr-5 font-oxanium font-semibold pl-4 py-4">$368.07</p>
+        <a
+          href="#"
+          title="Add to cart"
+          class="primary-btn__hover p-4 text-sm inline-block border border-[#FFBA00] bg-[#FFBA00] uppercase font-oxanium font-semibold"
+          ><span class="relative z-[1]">Add to cart</span></a
+        >
+      </div>
+    </div>
+    <footer class="py-6 px-5 sm:p-8 xl:p-10 bg-[#1A1919]">
+      <div class="pb-8 xl:pb-16 border-b border-[#3E4545]">
+        <div class="flex flex-wrap justify-between -mx-4 gap-y-5">
+          <div class="px-4 lg:w-1/2">
+            <p class="text-white font-oxanium font-semibold mb-2 text-lg">
+              Join our newsletter
+            </p>
+            <p class="text-[#E4E7EC]">
+              We’ll send you a nice letter once per week. No spam.
+            </p>
+          </div>
+          <div
+            class="flex flex-col gap-2 sm:flex-row sm:items-center justify-end px-4 w-full lg:w-1/2 ml-auto"
+          >
+            <input
+              type="text"
+              placeholder="Email address*"
+              class="sm:max-w-[280px] w-full h-[56px] text-light-mid bg-lightest-gray border py-2 px-3 text-sm focus:outline-none rounded-sm"
+            /><button
+              class="text-sm uppercase block sm:inline-block py-[18px] px-4 hover:bg-[#ffe399] transition-all duration-300 ease-in-out bg-[#FFBA00] rounded-sm font-oxanium font-semibold"
+            >
+              Subscribe
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-wrap justify-between -mx-4 my-8 xl:my-16 gap-y-8">
+        <div class="w-full sm:w-1/4 px-4">
+          <a class="text-2xl font-bold mb-8 text-white inline-block" href="/"
+            ><img src="/assets/logo.svg" alt="Logo" width="118" height="28"
+          /></a>
+          <p class="text-[#E4E7EC]">
+            Delivering unique and complete solutions for your business.
+          </p>
+        </div>
+        <div class="w-full sm:w-3/4 px-4 hidden md:block">
+          <div class="flex flex-wrap -mx-4 gap-y-8">
+            <div class="w-full sm:w-1/2 xl:w-1/4 px-4">
+              <p class="text-[#98A2B3] mb-4 text-sm font-semibold">Product</p>
+              <ul>
+                <li class="mb-3 text-[#E4E7EC]">
+                  <a href="#" class="text-base">Lubricants</a>
+                </li>
+                <li class="mb-3 text-[#E4E7EC]">
+                  <a href="#" class="text-base">Chemicals</a>
+                </li>
+                <li class="mb-3 text-[#E4E7EC]">
+                  <a href="#" class="text-base">Equipment</a>
+                </li>
+                <li class="mb-3 text-[#E4E7EC]">
+                  <a href="#" class="text-base">Auto Parts</a>
+                </li>
+                <li class="mb-3 text-[#E4E7EC]">
+                  <a href="#" class="text-base">Supplies</a>
+                </li>
+              </ul>
+            </div>
+            <div class="w-full sm:w-1/2 xl:w-1/4 px-4">
+              <p class="text-[#98A2B3] mb-4 text-sm font-semibold">Services</p>
+              <ul>
+                <li class="mb-3 text-[#E4E7EC]">
+                  <a href="#" class="text-base">Recycling</a>
+                </li>
+                <li class="mb-3 text-[#E4E7EC]">
+                  <a href="#" class="">Industrial</a>
+                </li>
+                <li class="mb-3 text-[#E4E7EC]">
+                  <a href="#" class="text-base">Equipments</a>
+                </li>
+                <li class="mb-3 text-[#E4E7EC]">
+                  <a href="#" class="text-base">Lab Analysis</a>
+                </li>
+                <li class="mb-3 text-[#E4E7EC]">
+                  <a href="#" class="text-base">Engine Testing</a>
+                </li>
+                <li class="mb-3 text-[#E4E7EC]">
+                  <a href="#" class="text-base">Vehicle Wash</a>
+                </li>
+                <li class="mb-3 text-[#E4E7EC]">
+                  <a href="#" class="text-base">Private Label</a>
+                </li>
+              </ul>
+            </div>
+            <div class="w-full sm:w-1/2 xl:w-1/4 px-4">
+              <p class="text-[#98A2B3] mb-4 text-sm font-semibold">Resources</p>
+              <ul>
+                <li class="mb-3 text-[#E4E7EC]">
+                  <a href="#" class="text-base">Blog &amp; News</a>
+                </li>
+                <li class="mb-3 text-[#E4E7EC]">
+                  <a href="#" class="text-base">Product Information</a>
+                </li>
+                <li class="mb-3 text-[#E4E7EC]">
+                  <a href="#" class="text-base">Data Sheets</a>
+                </li>
+                <li class="mb-3 text-[#E4E7EC]">
+                  <a href="#" class="text-base">Application Guides</a>
+                </li>
+                <li class="mb-3 text-[#E4E7EC]">
+                  <a href="#" class="text-base">Privacy Policy</a>
+                </li>
+                <li class="mb-3 text-[#E4E7EC]">
+                  <a href="#" class="text-base">Terms and Conditions</a>
+                </li>
+                <li class="mb-3 text-[#E4E7EC]">
+                  <a href="#" class="text-base">Website Feedback</a>
+                </li>
+              </ul>
+            </div>
+            <div class="w-full sm:w-1/2 xl:w-1/4 px-4">
+              <p class="text-[#98A2B3] mb-4 text-sm font-semibold">Careers</p>
+              <ul>
+                <li class="mb-3 text-[#E4E7EC]">
+                  <a href="#" class="text-base">Join Our Team</a>
+                </li>
+                <li class="mb-3 text-[#E4E7EC]">
+                  <a href="#" class="text-base">Available Positions</a>
+                </li>
+                <li class="mb-3 text-[#E4E7EC]">
+                  <a href="#" class="text-base">Drivers</a>
+                </li>
+                <li class="mb-3 text-[#E4E7EC]">
+                  <a href="#" class="text-base">Warehouse</a>
+                </li>
+                <li class="mb-3 text-[#E4E7EC]">
+                  <a href="#" class="text-base">Technicians</a>
+                </li>
+                <li class="mb-3 text-[#E4E7EC]">
+                  <a href="#" class="text-base">Sales</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="md:hidden w-full px-4">
+          <div class="last:mb-0 mb-8">
+            <div class="cursor-pointer">
+              <h3
+                class="font-semibold text-white accordion-header flex items-center justify-between"
+              >
+                Product
+                <span>
+                  <i
+                    class="fa-solid fa-plus icon transition-transform duration-300"
+                  ></i>
+                  <i
+                    class="fa-solid fa-minus icon transition-transform duration-300 !hidden"
+                  ></i>
+                </span>
+              </h3>
+
+              <ul class="accordion-content hidden mt-4">
+                <li class="mb-3 text-[#E4E7EC]">
+                  <a href="#" class="text-base">Lubricants</a>
+                </li>
+                <li class="mb-3 text-[#E4E7EC]">
+                  <a href="#" class="text-base">Chemicals</a>
+                </li>
+                <li class="mb-3 text-[#E4E7EC]">
+                  <a href="#" class="text-base">Equipment</a>
+                </li>
+                <li class="mb-3 text-[#E4E7EC]">
+                  <a href="#" class="text-base">Auto Parts</a>
+                </li>
+                <li class="mb-3 text-[#E4E7EC]">
+                  <a href="#" class="text-base">Supplies</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="last:mb-0 mb-8">
+            <div class="cursor-pointer">
+              <h3
+                class="font-semibold text-white accordion-header flex items-center justify-between"
+              >
+                Services
+                <span>
+                  <i
+                    class="fa-solid fa-plus icon transition-transform duration-300"
+                  ></i>
+                  <i
+                    class="fa-solid fa-minus icon transition-transform duration-300 !hidden"
+                  ></i>
+                </span>
+              </h3>
+
+              <ul class="accordion-content hidden mt-4">
+                <li class="mb-3 text-[#E4E7EC]">
+                  <a href="#" class="text-base">Recycling</a>
+                </li>
+                <li class="mb-3 text-[#E4E7EC]">
+                  <a href="#" class="">Industrial</a>
+                </li>
+                <li class="mb-3 text-[#E4E7EC]">
+                  <a href="#" class="text-base">Equipments</a>
+                </li>
+                <li class="mb-3 text-[#E4E7EC]">
+                  <a href="#" class="text-base">Lab Analysis</a>
+                </li>
+                <li class="mb-3 text-[#E4E7EC]">
+                  <a href="#" class="text-base">Engine Testing</a>
+                </li>
+                <li class="mb-3 text-[#E4E7EC]">
+                  <a href="#" class="text-base">Vehicle Wash</a>
+                </li>
+                <li class="mb-3 text-[#E4E7EC]">
+                  <a href="#" class="text-base">Private Label</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="last:mb-0 mb-8">
+            <div class="cursor-pointer">
+              <h3
+                class="font-semibold text-white accordion-header flex items-center justify-between"
+              >
+                Resources
+                <span>
+                  <i
+                    class="fa-solid fa-plus icon transition-transform duration-300"
+                  ></i>
+                  <i
+                    class="fa-solid fa-minus icon transition-transform duration-300 !hidden"
+                  ></i>
+                </span>
+              </h3>
+              <ul class="accordion-content hidden mt-4">
+                <li class="mb-3 text-[#E4E7EC]">
+                  <a href="#" class="text-base">Blog &amp; News</a>
+                </li>
+                <li class="mb-3 text-[#E4E7EC]">
+                  <a href="#" class="text-base">Product Information</a>
+                </li>
+                <li class="mb-3 text-[#E4E7EC]">
+                  <a href="#" class="text-base">Data Sheets</a>
+                </li>
+                <li class="mb-3 text-[#E4E7EC]">
+                  <a href="#" class="text-base">Application Guides</a>
+                </li>
+                <li class="mb-3 text-[#E4E7EC]">
+                  <a href="#" class="text-base">Privacy Policy</a>
+                </li>
+                <li class="mb-3 text-[#E4E7EC]">
+                  <a href="#" class="text-base">Terms and Conditions</a>
+                </li>
+                <li class="mb-3 text-[#E4E7EC]">
+                  <a href="#" class="text-base">Website Feedback</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="last:mb-0 mb-8">
+            <div class="cursor-pointer">
+              <h3
+                class="font-semibold text-white accordion-header flex items-center justify-between"
+              >
+                Careers
+                <span>
+                  <i
+                    class="fa-solid fa-plus icon transition-transform duration-300"
+                  ></i>
+                  <i
+                    class="fa-solid fa-minus icon transition-transform duration-300 !hidden"
+                  ></i>
+                </span>
+              </h3>
+
+              <ul class="accordion-content hidden mt-4">
+                <li class="mb-3 text-[#E4E7EC]">
+                  <a href="#" class="text-base">Join Our Team</a>
+                </li>
+                <li class="mb-3 text-[#E4E7EC]">
+                  <a href="#" class="text-base">Available Positions</a>
+                </li>
+                <li class="mb-3 text-[#E4E7EC]">
+                  <a href="#" class="text-base">Drivers</a>
+                </li>
+                <li class="mb-3 text-[#E4E7EC]">
+                  <a href="#" class="text-base">Warehouse</a>
+                </li>
+                <li class="mb-3 text-[#E4E7EC]">
+                  <a href="#" class="text-base">Technicians</a>
+                </li>
+                <li class="mb-3 text-[#E4E7EC]">
+                  <a href="#" class="text-base">Sales</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-t border-[#475467]">
+        <div
+          class="flex flex-wrap justify-center md:justify-between -mx-4 gap-y-5 pt-8"
+        >
+          <div class="md:w-auto px-4">
+            <p class="text-[#98A2B3] text-center md:text-left">
+              © 2024 Ipsum Industries. All rights reserved.
+            </p>
+          </div>
+          <div class="md:w-auto px-4">
+            <div class="flex gap-x-6 text-[#98A2B3] items-center">
+              <a href="/" class="text-2xl font-bold">
+                <img
+                  src="/assets/facebook.svg"
+                  alt="Logo"
+                  width="24"
+                  height="24"
+                />
+              </a>
+              <a href="/" class="text-2xl font-bold">
+                <img
+                  src="/assets/twitter.svg"
+                  alt="Logo"
+                  width="24"
+                  height="24"
+                />
+              </a>
+              <a href="/" class="text-2xl font-bold">
+                <img
+                  src="/assets/youtube.svg"
+                  alt="Logo"
+                  width="24"
+                  height="24"
+                />
+              </a>
+              <a href="/" class="text-2xl font-bold">
+                <img
+                  src="/assets/instagram.svg"
+                  alt="Logo"
+                  width="24"
+                  height="24"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
